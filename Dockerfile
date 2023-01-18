@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0
 
 WORKDIR /source
 
-COPY ./api .
+COPY . .
 
 RUN dotnet build -c release -o out
 
